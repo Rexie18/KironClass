@@ -1,3 +1,8 @@
-p{
- color: blue;
- }
+body {
+    background-color: lightblue;
+}
+
+P{
+    color: navy;
+    margin-left: 20px;
+}
