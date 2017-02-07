@@ -3,6 +3,26 @@ body{
 	font-family: arial;
 }
 
+.responsiveDiv {
+   float: left;
+   margin: 10px;
+   padding: 10px;
+   max-width: 30%;
+   height: auto;
+   border: 1px solid black;
+   opacity: 06;
+} 	
+
+#p1{
+	   background-color: Cyan;
+	}
+	#p2{
+	    background-color: yellow;
+	}
+	#p1{
+	    background-color: gray;
+	}
+
 @media(min-width: 992px){
 .responsiveDiv {
    float: left;
@@ -12,24 +32,25 @@ body{
    height: auto;
    border: 1px solid black;
    opacity: 06;
+ 
 	} 	
 }
 
 @media(min-width: 768px) and (max-width:991px){
 	#p1{
-		width: 30%;
+	    width: 30%;
 	}
-#p2{
-		width: 30%;
+	#p2{
+	    width: 30%;
 	}
 	#p1{
-		width: 60%;
+	    width: 60%;
 	}
 
 }
 
 @media(max-width: 767px) and (max-width:991px){
-	@media(min-width: 992px){
+	
 .responsiveDiv {
    float: left;
    margin: 10px;
@@ -41,4 +62,4 @@ body{
 	} 	
 }
 
-}
+
