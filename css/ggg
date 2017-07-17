@@ -1,0 +1,57 @@
+
+<!--
+  Generated template for the AboutPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>About</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+<ion-card>
+<ion-card-header>
+    Our History
+  </ion-card-header>
+
+  <ion-card-content>
+    Quisque malesuada nibh sapien, sit amet viverra erat condimentum sit amet. Phasellus in risus laoreet justo dapibus fringilla. Donec ut nisl consectetur, ullamcorper est eget, ultrices elit. Phasellus sem ante, suscipit mollis orci sed, sagittis viverra turpis. Suspendisse volutpat, tortor non dapibus accumsan, sapien eros imperdiet est, tempus lobortis sem enim id massa. Suspendisse ultrices magna nunc, non porta nunc gravida non. Nunc maximus scelerisque elit eget semper.
+  </ion-card-content>
+
+</ion-card>
+
+<ion-card>
+<ion-card-header>
+    Corporate Leadership
+  </ion-card-header>
+
+  <ion-card-content>
+
+    <ion-list  >
+    <ion-item *ngFor="let leader of leadership | async" text-wrap>
+      <ion-avatar item-start>
+        <img src="{{baseUrl}}{{ leader.avatar}}" />
+      </ion-avatar>
+
+      <h1>{{ leader.name}}</h1>
+      <h2>{{ leader.role}}</h2>
+      <p> {{leader.bio}}</p>
+    </ion-item>
+  </ion-list> 
+   
+  <!-- <pre>
+    {{leadership | async | json}}
+    </pre> -->
+  </ion-card-content> 
+
+  
+
+</ion-card>
+</ion-content>
