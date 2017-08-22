@@ -1,65 +1,41 @@
-.selector-for-some-widget {
-  box-sizing: content-box;
+html  {
+  box-sizing: border-box;
 }
-body{
-	background-color: none;
-	font-family: arial;
+*, *:before, *:after {
+  box-sizing: inherit;
 }
-
-h1, h2{
-  margin: 15px;
+{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
-
-p {
-   float: left;
-   margin: 15px;
-   padding: 10px;
-   width: 300px;
-   border: 1px solid black;
-   
-} 	
-
-#p1{
-	   background-color: Cyan;
-	}
-	#p2{
-	    background-color: yellow;
-	}
-	#p3{
-	    background-color: gray;
-	}
-
-@media(min-width: 992px){
-p {
-   max-width: 33%;
-   
-	} 	
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  }
+div.container {
+    width: 80%;
+    border: 0.025em solid;
 }
 
-@media(min-width: 768px) and (max-width:991px){
-	#p1{
-	    width: 35%;
-	}
-	#p2{
-	    width: 35%;
-	}
-	#p3{
-	    width: 80%;
-	}
-
+div.row-content {
+    box-sizing: border-box;
+    width: 49.3%;
+    border: 1em solid red;
+    float: left;
+    margin: 0.1em;
 }
 
-@media(max-width: 767px) and (max-width:991px){
-	
-#p1{
-	    width: 80%;
-	}
-	#p2{
-	    width: 80%;
-	}
-	#p3{
-	    width: 80%;
-	}
+@media (min-width: 576px) { ... }
 
-}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
 <!--https://stackoverflow.com/questions/36185004/nodejs-mongodb-checking-if-a-user-has-admin-privileges-token-based-auth-->
